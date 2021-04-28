@@ -1,0 +1,38 @@
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage{fancyvrb}
+\usepackage{mathtools}
+\usepackage{newverbs}
+\usepackage{stmaryrd}
+\usepackage{xcolor}
+
+% Remove extra spacing before title
+\usepackage{titling}
+\setlength{\droptitle}{-15ex}
+
+% Full horizontal rule
+\let\OldRule\rule
+\renewcommand{\rule}[2]{\OldRule{\linewidth}{#2}}
+
+% Inline code background
+\definecolor{Light}{HTML}{F4F4F4}
+\let\oldtexttt\texttt
+\renewcommand{\texttt}[1]{\colorbox{Light}{\oldtexttt{#1}}}
+
+% Itemize bullets
+\setlist[itemize,1]{label=$\bullet$}
+\setlist[itemize,2]{label=$\circ$}
+\setlist[itemize,3]{label=$\bullet$}
+\setlist[itemize,4]{label=$\circ$}
+
+% Red/Blue emphasis
+\newcommand{\red}[1]{\textcolor{red}{\text{#1}}}
+\newcommand{\blue}[1]{\textcolor{blue}{\text{\textit{#1}}}}
+
+% Disable page numbering
+%\pagenumbering{gobble}
+
